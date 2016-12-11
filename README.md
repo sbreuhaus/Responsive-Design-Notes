@@ -1,10 +1,10 @@
-###Responsive Design Notes
+##Responsive Design Notes
 
-Viewport
+##Viewport
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
-Media Queries
+##Media Queries
 * Use content as a guide for breakpoints, not a device
 * Start design for phone and then work up to tablet and finally desktop
 * Can reference a specific style sheet for a specific screen size.  However this results in additional http  requests which can slow the site down
@@ -28,7 +28,7 @@ Media Queries
 }
 ```
 
-Flex-box
+###Flex-box
 
 On the parent flex container.  Flex-wrap tells browser its OK for elements to wrap to the next line
 ```CSS
@@ -40,7 +40,6 @@ On the parent flex container.  Flex-wrap tells browser its OK for elements to wr
 }
 ```
 Change the order of elements with the order attribute on media queries
-* Example:
 ```CSS
 @media screen and (min-width: 700px){
   .dark_blue { order: 4; }
