@@ -27,3 +27,26 @@ Media Queries
   body {background-color: blue;}
 }
 ```
+
+Flex-box
+
+On the parent flex container.  Flex-wrap tells browser its OK for elements to wrap to the next line
+```CSS
+.container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+```
+Change the order of elements with the order attribute on media queries
+* Example:
+```CSS
+@media screen and (min-width: 700px){
+  .dark_blue { order: 4; }
+  .light_blue { order: 5 }
+  .green { order: 2 }
+  .orange { order: 3 }
+  .red { order: 1 }
+}
+```
