@@ -1,7 +1,7 @@
 ##Responsive Design Notes
 
 ##Harware pixels VS Device Independent pixels (Dips)
-The browser reports the number of pixels as dips, not hardware.  Dips is a unit of measurement that relates pixels to a real distance.  The idea is that a Dip will take up the same amount of space on any display regardless of the pixel density of the display.  A device width of 2560 device pixels will have a width of 1280 Dips because if there is a device pixel ratio of two.  
+The browser reports the number of pixels as dips, not hardware.  Dips is a unit of measurement that relates pixels to a real distance.  The idea is that a Dip will take up the same amount of space on any display regardless of the pixel density of the display.  For example, a device width of 2560 device pixels will have a width of 1280 Dips if there is a device pixel ratio of two.  
 
 ##Viewport
 Unless you tell the browser your site was designed to work on a small screen, it assumes that it wasn't.
