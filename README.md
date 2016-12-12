@@ -1,6 +1,11 @@
 ##Responsive Design Notes
 
+##Harware pixels VS Device Independent pixels (Dips)
+The browser reports the number of pixels as dips, not hardware.  Dips is a unit of measurement that relates pixels to a real distance.  The idea is that a Dip will take up the same amount of space on any display regardless of the pixel density of the display.  A device width of 2560 device pixels will have a width of 1280 Dips because if there is a device pixel ratio of two.  
+
 ##Viewport
+Unless you tell the browser your site was designed to work on a small screen, it assumes that it wasn't.
+It renders the page as if it were on a screen that is 980 Dips wide.  The browser also scales the content, rather than letting it re-flow.  If the screen is a phone that is only 360 dips, the content will be scaled to less than half and look terrible.  Insert this meta tag to avoid that.
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
