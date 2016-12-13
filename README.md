@@ -123,3 +123,17 @@ Add a margin to Flex container once it passes the largest width desired
     margin-right: auto;}
 }
 ```
+###Images
+Common use case for logos is to use the same image, but change the resolution depending on screen size.  Do this by using the source set attribute on an image tag.  The browser will choose which file it wants and then only download that one.
+
+* It is best to reduce file size to lowest possible quality and smallest size.
+* Use max-width on an image to prevent it from scaling too far and becoming pixelated
+* Use calc with a relative width and fixed margin with two images.  
+```CSS
+img {
+  width: calc((100%-10px)/2))
+}
+img:last-of-type {
+  margin-right: 0px; /* ensures there's only a margin between the images and not to the right of the second image*/
+}
+```
